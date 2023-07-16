@@ -1,0 +1,143 @@
+.contact {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+}
+
+.section_title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section_subtitle {
+  font-size: 1rem; /* Increase the font size to your preference */
+  text-align: center;
+  margin-bottom: 10rem;
+  margin-left: 40rem;
+  margin-bottom: 10rem;
+  color: gray;
+}
+
+.contact_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.contact_info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact_icon {
+  font-size: 4rem;
+  margin-right: 1rem;
+  color: #6e57e0;
+}
+
+.contact_title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.contact_subtitle {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.contact_form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: #6e57e0;
+}
+
+.contact_label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact_input {
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #6e57e0;
+  border-radius: 4px;
+}
+
+.contact_input.message {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #6e57e0;
+  color: #fff;
+
+}
+
+.button_icon {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.alert_style {
+  display: none;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.alert_success {
+  background-color: #7ad03a;
+}
+
+.alert_error {
+  background-color: #d03a3a;
+}
+
+.connect_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+}
+
+.connect_text {
+  font-size: 20px; 
+  font-weight: 500;
+  text-align: center;
+  margin-top: -5rem;
+}
+
+
+
+.contact {
+  padding: 25px 30rem;
+}
+
+.section_titlee{
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-left: 25rem;
+  margin-bottom: 3rem;
+}
+.button:hover{
+  background:  #6144d4;;
+}

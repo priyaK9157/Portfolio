@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+:root {
+  --bgBlue: #696fc8;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Navbar Style */
+
+.main-nav {
+  width: 100%;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  cursor: pointer;
+}
+
+.logo {
+  display: grid;
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-link {
+  grid-column: 3/4;
+}
+
+.menu-link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.social-media ul {
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-media ul li {
+  text-align: right;
+}
+
+.social-media ul li:first-child {
+  grid-column: 2/3;
+}
+
+.logo h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#dca4a4, rgb(21, 21, 24));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo h2 span {
+  font-size: 3.5rem;
+}
+
+.menu-link ul li {
+  font-size: 1.8rem;
+}
+
+.menu-link ul li a {
+  text-transform: capitalize;
+  color: rgba(0, 0, 3, 0.8);
+  transition: 0.5s;
+}
+
+.menu-link ul li:hover > a {
+  transform-origin: left;
+  color: rgba(0, 0, 3, 1);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.social-media ul li {
+  font-size: 2rem;
+}
+
+/* Hero Section */
+
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  padding-bottom: 8rem;
+}
+
+.faded-text {
+  position: absolute;
+  user-select: none;
+  font-size: 3em;
+  color: rgb(231, 231, 231);
+  bottom: -16%;
+  left: -5%;
+  font-weight: bold;
+  transition: all 3s;
+}
+
+.hero-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-section-heading {
+  font-size: 25px;
+  color: #343d68;
+  font-weight: 500;
+}
+
+.role {
+  color: #6e57e0;
+  font-weight: 800;
+}
+
+.hero-section-sub-heading {
+  font-size: 25px;
+  line-height: 45px;
+}
+
+.hero-section-description {
+  margin-top: 1rem;
+  width: 70%;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.btn-pink {
+  background-color: #6e57e0;
+  width: fit-content;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  box-shadow: 5px 5px 7px 0px #0000003f;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-pink::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+}
+
+.btn-pink:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-pink:hover {
+  border: solid 3px var(--bgBlue);
+  color: black;
+}
+
+body {
+  transition: background-color 0.3s ease;
+}
+
+
+/* Social Media Icons */
+
+.social-media {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.social-media-desktop {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-desktop li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media-desktop li:last-child {
+  margin-right: 0;
+}
+
+.social-icon {
+  color: #333;
+  font-size: 24px;
+  
+}
+
+.github-icon {
+  color: #6e57e0;
+  font-size: 3.5rem;
+}
+.github-icon:hover{
+  color: #6144d4;
+}
+.linkedin-icon:hover{
+  color: #6144d4;
+}
+.twitter-icon:hover{
+  color:  #6144d4;
+}
+.linkedin-icon {
+  color: #6e57e0;
+  font-size: 3rem;
+}
+
+.twitter-icon {
+  color: #6e57e0;
+  font-size: 4rem;
+}
+
+.main {
+  padding: 1.5rem 20rem;
+}
+
+.rounded-image {
+  border-radius: 50%;
+}
+
+.hero {
+  padding: 15rem;
+}
+
+
+
+
+
+

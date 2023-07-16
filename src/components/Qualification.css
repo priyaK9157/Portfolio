@@ -1,0 +1,80 @@
+.qualification-container {
+  text-align: center;
+  margin-top: 9%;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  margin-top: 2px;
+  color: #555;
+  font-size: 1.5rem;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+  color: #6e57e0;
+   
+}
+
+.tab-icon {
+  font-size: 2.5rem;
+  margin-right: 8px;
+  color:#6e57e0; 
+}
+
+.content-container {
+  margin-top: 16px;
+}
+
+.qualification-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.qualification-item {
+  max-width: 320px;
+}
+
+.qualification-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.qualification-subtitle {
+  font-size: 1.8rem;
+  color: #6e57e0;
+  margin-bottom: 4px;
+}
+
+.qualification-duration {
+  font-size: 1.8rem;
+  color: #555;
+}
+.qualification-container{
+  padding-top: 4rem;
+  padding-bottom: 12rem;
+}

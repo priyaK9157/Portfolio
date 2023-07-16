@@ -1,0 +1,82 @@
+.project-section {
+  padding: 6rem 25rem;
+}
+
+.top {
+  margin-left: 30rem;
+  font-size: 3rem;
+}
+
+.title {
+  margin-left: 31rem;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.project-image {
+  width: 300px; /* Adjust or remove this width if necessary */
+  height: 200px; /* Adjust or remove this height if necessary */
+  margin-right: 20px;
+  border-radius: 3rem;
+  overflow: hidden; /* Add this to ensure the video fits within the container */
+}
+
+.project-image img {
+  width: 100%; /* Set the image width to fill the container */
+  height: 100%; /* Set the image height to fill the container */
+  object-fit: cover;
+}
+
+.project-image video {
+  width: 100%; /* Set the video width to fill the container */
+  height: 100%; /* Set the video height to fill the container */
+  object-fit: cover;
+}
+
+.project-description {
+  margin-bottom: 20px;
+  text-align: left;
+  flex: 1; /* Add flex: 1 to allow the description to grow */
+}
+
+.checkout {
+  background-color: #6e57e0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  color: white;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  margin-left: 25rem;
+}
+
+.arrow {
+  font-size: 3rem !important;
+  color: #6e57e0;
+  margin-left: 20rem;
+  cursor: pointer;
+  background-color: #6e57e0;
+  color: aliceblue;
+}
+.desc{
+  font-size: 1.6rem;
+  padding: 5rem;
+}
+.title{
+  font-size: 2rem;
+}
+.checkout:hover{
+  background: #6144d4;
+}
