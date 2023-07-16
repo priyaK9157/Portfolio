@@ -17,7 +17,7 @@ const projects = [
     title: 'Project 2',
     description: 'Personal Portfolio Website. My Personal Portfolio website made using React and CSS with a minimal and clean UI.',
     videoUrl: portfolioVideo1,
-    checkoutLink: 'https://example.com/project2',
+    checkoutLink: 'https://myportfolio-rose-sigma.vercel.app/',
   },
 ];
 
