@@ -1,3 +1,4 @@
+/* project.css */
 .project-section {
   padding: 6rem 25rem;
 }
@@ -9,6 +10,7 @@
 
 .title {
   margin-left: 31rem;
+  font-size: 2rem;
 }
 
 .project-container {
@@ -25,29 +27,29 @@
 }
 
 .project-image {
-  width: 300px; /* Adjust or remove this width if necessary */
-  height: 200px; /* Adjust or remove this height if necessary */
+  width: 300px;
+  height: 200px;
   margin-right: 20px;
   border-radius: 3rem;
-  overflow: hidden; /* Add this to ensure the video fits within the container */
+  overflow: hidden;
 }
 
 .project-image img {
-  width: 100%; /* Set the image width to fill the container */
-  height: 100%; /* Set the image height to fill the container */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .project-image video {
-  width: 100%; /* Set the video width to fill the container */
-  height: 100%; /* Set the video height to fill the container */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .project-description {
   margin-bottom: 20px;
   text-align: left;
-  flex: 1; /* Add flex: 1 to allow the description to grow */
+  flex: 1;
 }
 
 .checkout {
@@ -70,13 +72,68 @@
   background-color: #6e57e0;
   color: aliceblue;
 }
-.desc{
+
+.desc {
   font-size: 1.6rem;
   padding: 5rem;
 }
-.title{
+
+.title {
   font-size: 2rem;
 }
-.checkout:hover{
+
+.checkout:hover {
   background: #6144d4;
+}
+
+/* Media Queries for responsive layout */
+/* For screen sizes <= 768px */
+@media screen and (max-width: 768px) {
+  .project-section {
+    padding: 2rem;
+  }
+
+  .top {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .title {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .project-description {
+    text-align: center;
+    flex: none;
+  }
+
+  .checkout {
+    margin-left: 2rem;
+  }
+
+  .arrow {
+    margin-left: 2rem;
+  }
+
+  .desc {
+    padding: 1rem;
+  }
 }
