@@ -1,5 +1,8 @@
+/* contact.css */
+
+/* Original styles for large screens */
 .contact {
-  padding: 4rem 0;
+  padding: 25px 30rem;
   background-color: #f4f4f4;
 }
 
@@ -87,7 +90,6 @@
   cursor: pointer;
   background-color: #6e57e0;
   color: #fff;
-
 }
 
 .button_icon {
@@ -116,28 +118,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; 
+  height: 100px;
 }
 
 .connect_text {
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: 500;
   text-align: center;
   margin-top: -5rem;
 }
 
+/* Media Queries for responsive layout */
 
-
-.contact {
-  padding: 25px 30rem;
-}
-
-.section_titlee{
-  font-size: 2.5rem;
-  margin-top: 2rem;
-  margin-left: 25rem;
-  margin-bottom: 3rem;
-}
-.button:hover{
-  background:  #6144d4;;
+/* For screen sizes <= 768px */
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+  
+  .section_subtitle {
+    margin: 2rem 0; /* Adjust the margin to your preference */
+    text-align: center; /* Center the text on smaller screens */
+  }
+  
+  .contact_container {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+  }
+  
+  .contact_info {
+    justify-content: center; /* Center the contact info on smaller screens */
+  }
+  
+  .section_title {
+    font-size: 2rem; /* Adjust the font size for smaller screens */
+    text-align: center; /* Center the text on smaller screens */
+    margin-top: 2rem; /* Adjust the margin to your preference */
+    margin-bottom: 2rem; /* Adjust the margin to your preference */
+  }
+  
+  .button {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    padding: 1rem 1.5rem; /* Adjust the padding for smaller screens */
+  }
 }
