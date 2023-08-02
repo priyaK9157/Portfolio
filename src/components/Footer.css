@@ -1,52 +1,77 @@
+/* footer.css */
+
+/* Original styles for large screens */
 .footer {
-    background-color: #f6f6f6;
-    padding: 40px;
-    text-align: center;
+  background-color: #f6f6f6;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content span {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.footer-content a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  /* background: #5c1281; */
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #6e57e0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_content p {
+  margin: 0.5rem 0;
+  color: #777;
+}
+
+.footer-content a.active {
+  font-weight: bold;
+}
+
+/* Media Queries for responsive layout */
+
+/* For screen sizes <= 768px */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px; /* Reduce padding for smaller screens */
   }
   
   .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Stack the content in a column */
+    align-items: center; /* Center the content on smaller screens */
+    gap: 10px; /* Adjust the gap between elements to your preference */
   }
   
   .footer-content span {
-    margin-right: 20px;
-    font-size: 18px;
+    margin-right: 0; /* Remove the margin for smaller screens */
   }
   
   .footer-content a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    /* background: #5c1281; */
+    margin-right: 0; /* Remove the margin for smaller screens */
+    margin-bottom: 10px; /* Add some spacing between links */
   }
-  
-  .footer-content a:hover {
-    text-decoration: underline;
-  }
-
-  .footer {
-    background-color:#6e57e0;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .footer_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .footer_content p {
-    margin: 0.5rem 0;
-    color: #777;
-  }
-  .footer-content a.active {
-    font-weight: bold;
-  }
-  
-  
-  
+}
