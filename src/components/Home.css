@@ -269,8 +269,65 @@ body {
   padding: 15rem;
 }
 
+@media screen and (max-width: 768px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 5rem 1fr 1fr 5rem;
+  }
 
+  .logo {
+    grid-column: 2/3;
+  }
 
+  .menu-link {
+    display: none;
+  }
 
+  .social-media ul {
+    display: none;
+  }
 
+  .hero-section {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 1rem;
+    padding-bottom: 4rem;
+  }
 
+  .hero-section-left {
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .hero-section-right {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-section-heading {
+    font-size: 2rem;
+  }
+
+  .hero-section-sub-heading {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+
+  .hero-section-description {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  .btn-pink {
+    font-size: 18px;
+    padding: 0.6rem 1.8rem;
+    font-weight: 500;
+  }
+
+  .rounded-image {
+    width: 200px;
+    height: 200px;
+  }
+}
